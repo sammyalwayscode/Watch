@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import { Footer, Header } from "../static";
+import { Footer } from "../static";
 
 const WebLayout = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Outlet />
       <Footer />
     </div>
