@@ -1,7 +1,7 @@
 import editor1 from "../../assets/editor1.png";
 import editorHover1 from "../../assets/editorHover.png";
 
-const editorsCollections = [
+const productCollections = [
   {
     watchImg: editor1,
     watchImgHover: editorHover1,
@@ -10,9 +10,9 @@ const editorsCollections = [
   },
 ];
 
-const EditorPick = () => {
+const Products = () => {
   return (
-    <div className=" w-full flex justify-center items-center mb-48">
+    <div className=" w-full flex justify-center items-center">
       <div className=" flex flex-col items-center">
         <h2
           style={{
@@ -20,10 +20,17 @@ const EditorPick = () => {
           }}
           className=" font-normal text-4xl uppercase tracking-[15px] mb-24 text-yellow-700"
         >
-          Editors' Picks
+          Our Products
         </h2>
+        <section className=" flex font-semibold text-gray-400 cursor-pointer">
+          <nav className=" mx-10">All</nav>
+          <nav className=" mx-10">Accessories</nav>
+          <nav className=" mx-10">Men</nav>
+          <nav className=" mx-10">Women</nav>
+        </section>
+
         <section className=" flex mb-16">
-          {editorsCollections?.map((props, i) => (
+          {productCollections?.map((props, i) => (
             <div
               key={i}
               className=" flex text-center flex-col items-center mx-12"
@@ -38,13 +45,9 @@ const EditorPick = () => {
             </div>
           ))}
         </section>
-
-        <section>
-          <div>Circle</div>
-        </section>
       </div>
     </div>
   );
 };
 
-export default EditorPick;
+export default Products;

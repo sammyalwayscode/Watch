@@ -1,4 +1,10 @@
-import { Companies, EditorPick, HeroPage } from "../components/Home";
+import {
+  Companies,
+  EditorPick,
+  HeroPage,
+  Products,
+  WhyChooseUS,
+} from "../components/Home";
 
 const Home = () => {
   return (
@@ -6,6 +12,8 @@ const Home = () => {
       <HeroPage />
       <Companies />
       <EditorPick />
+      <WhyChooseUS />
+      <Products />
     </div>
   );
 };
