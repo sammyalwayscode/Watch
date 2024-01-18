@@ -23,7 +23,7 @@ const Products = () => {
           Our Products
         </h2>
         <section className=" flex font-semibold text-gray-400 cursor-pointer">
-          <nav className=" mx-10">All</nav>
+          <nav className=" mx-10 text-gray-500">All</nav>
           <nav className=" mx-10">Accessories</nav>
           <nav className=" mx-10">Men</nav>
           <nav className=" mx-10">Women</nav>
