@@ -7,9 +7,6 @@ const WhyChooseUS = () => {
   return (
     <div className=" w-full flex justify-center items-center mb-28">
       <div className=" w-[95%] bg-yellow-700 min-h-[110vh] flex flex-col items-center">
-        <section className=" w-[900px] h-[495px] bg-gray-300 -mt-60 mb-36">
-          <img src="" alt="Choose us" />
-        </section>
         <section className="  flex flex-col items-center">
           <div className=" w-[700px] text-center mb-16">
             <h2
