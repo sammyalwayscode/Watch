@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa6";
-import hero from "../../assets/hero11.png";
+import hero from "../../assets/heroo.png";
 
 const Hero = () => {
   return (
@@ -21,7 +21,7 @@ const Hero = () => {
             <FaArrowRight />
           </div>
         </div>
-        <div className=" ml-20">
+        <div className=" ml-20 ">
           <img className=" w-[450px] -mt-4 " src={hero} alt="Hero Watch" />
         </div>
       </div>
