@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
   return (
-    <div className=" w-full h-28 -300 flex justify-center">
+    <div className=" w-full h-28 -300 flex justify-center ">
       <div className=" w-[95%]  h-full flex justify-between items-center">
         <div className=" flex ">
           <div className=" mr-16 font-black text-xl">Watch.</div>

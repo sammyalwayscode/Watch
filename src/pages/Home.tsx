@@ -2,6 +2,7 @@ import {
   Companies,
   EditorPick,
   HeroPage,
+  NewsSuscribe,
   Products,
   WhyChooseUS,
 } from "../components/Home";
@@ -14,6 +15,7 @@ const Home = () => {
       <EditorPick />
       <WhyChooseUS />
       <Products />
+      <NewsSuscribe />
     </div>
   );
 };

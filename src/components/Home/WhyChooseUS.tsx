@@ -6,7 +6,7 @@ import { PiUsersBold } from "react-icons/pi";
 const WhyChooseUS = () => {
   return (
     <div className=" w-full flex justify-center items-center mb-28">
-      <div className=" w-[95%] bg-yellow-700 min-h-[110vh] flex flex-col items-center">
+      <div className=" w-[95%] bg-yellow-700 min-h-[400px] flex items-center justify-center">
         <section className="  flex flex-col items-center">
           <div className=" w-[700px] text-center mb-16">
             <h2
