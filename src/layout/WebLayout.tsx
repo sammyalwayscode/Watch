@@ -6,7 +6,7 @@ const WebLayout = () => {
     <div>
       {/* <Header /> */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Home = () => {
       <EditorPick />
       <WhyChooseUS />
       <Products />
-      <NewsSuscribe />
+      {/* <NewsSuscribe /> */}
     </div>
   );
 };

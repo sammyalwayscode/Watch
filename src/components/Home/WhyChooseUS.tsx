@@ -3,81 +3,69 @@ import { FaHistory } from "react-icons/fa";
 import { FaRegCreditCard } from "react-icons/fa6";
 import { PiUsersBold } from "react-icons/pi";
 
+const chooseArray = [
+  {
+    icon: <GrSend />,
+    title: "Free Shipping",
+    content: "Order over $99",
+  },
+  {
+    icon: <FaHistory />,
+    title: "90 Days Return",
+    content: "If goods have problem",
+  },
+  {
+    icon: <FaRegCreditCard />,
+    title: "Secured Payment",
+    content: "100% secured payment",
+  },
+  {
+    icon: <PiUsersBold />,
+    title: "24h Support",
+    content: "Dedicated support",
+  },
+];
+
 const WhyChooseUS = () => {
   return (
     <div className=" w-full flex justify-center items-center mb-28">
       <div className=" w-[95%] bg-yellow-700 min-h-[400px] flex items-center justify-center">
-        <section className="  flex flex-col items-center">
-          <div className=" w-[700px] text-center mb-16">
+        <section className="  flex flex-col items-center py-8">
+          <div className=" w-[700px] text-center mb-8 tablet:w-full flex flex-col items-center ">
             <h2
               style={{
                 fontFamily: "Oswald",
               }}
-              className=" uppercase text-4xl tracking-[15px] text-white mb-9"
+              className=" uppercase text-4xl tracking-[15px] text-white mb-9 tablet:text-3xl mobile:text-xl tablet:w-[95%]"
             >
               Why Choose Us
             </h2>
-            <p className=" text-sm text-gray-300 font-medium">
+            <p className=" text-sm text-gray-300 font-medium tablet:w-[95%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               eu quam ac nisl iaculis feugiat at at loirei lmetus. Ulmi Donec
               lacus neque, convallis ut ex ac, venenatis pharetra urna.
             </p>
           </div>
 
-          <main className=" flex">
-            <div className=" flex items-center mx-12">
-              <div className=" text-white text-3xl mr-4">
-                <GrSend />
-              </div>
-              <div>
-                <p className=" font-semibold text-white text-base">
-                  Free Shipping
-                </p>
-                <div className=" text-sm text-gray-300 -mt-[2px]">
-                  Order over $99
+          <main className=" flex flex-wrap justify-center">
+            {chooseArray?.map((props, i) => {
+              return (
+                <div
+                  key={i}
+                  className=" flex items-center m-7 mobile:m-4  w-56 tablet:m-5"
+                >
+                  <div className=" text-white text-3xl mr-4">{props?.icon}</div>
+                  <div>
+                    <p className=" font-semibold text-white text-base">
+                      {props?.title}
+                    </p>
+                    <div className=" text-sm text-gray-300 -mt-[2px]">
+                      {props?.content}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            {/* <div className=" w-[px] bg-gray-400" /> */}
-            <div className=" flex items-center mx-12">
-              <div className=" text-white text-3xl mr-4">
-                <FaHistory />
-              </div>
-              <div>
-                <p className=" font-semibold text-white text-base">
-                  90 Days Return
-                </p>
-                <div className=" text-sm text-gray-300 -mt-[2px]">
-                  If goods have problem
-                </div>
-              </div>
-            </div>
-            <div className=" flex items-center mx-12">
-              <div className=" text-white text-3xl mr-4">
-                <FaRegCreditCard />
-              </div>
-              <div>
-                <p className=" font-semibold text-white text-base">
-                  Secured Payment
-                </p>
-                <div className=" text-sm text-gray-300 -mt-[2px]">
-                  100% secured payment
-                </div>
-              </div>
-            </div>
-            <div className=" flex items-center mx-12">
-              <div className=" text-white text-3xl mr-4">
-                <PiUsersBold />
-              </div>
-              <div>
-                <p className=" font-semibold text-white text-base">
-                  24h Support
-                </p>
-                <div className=" text-sm text-gray-300 -mt-[2px]">
-                  Dedicated support
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </main>
         </section>
       </div>
