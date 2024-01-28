@@ -30,10 +30,17 @@ const compArray = [
 const Companies = () => {
   return (
     <div className=" w-full flex justify-center mb-32">
-      <div className=" flex flex-wrap">
+      <div className=" flex flex-wrap justify-center items-center">
         {compArray?.map((props, i) => (
-          <div key={i} className=" mx-16">
-            <img src={props.compLogoImg} alt={props.watchCompDesc} />
+          <div
+            key={i}
+            className=" lg:mx-20 m-10 tablet:w-20 tablet:m-5 mobile:w-12 mobile:m-2"
+          >
+            <img
+              className=" "
+              src={props.compLogoImg}
+              alt={props.watchCompDesc}
+            />
           </div>
         ))}
       </div>
