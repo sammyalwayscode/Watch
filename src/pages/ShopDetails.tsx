@@ -1,5 +1,9 @@
 const ShopDetails = () => {
-  return <div>ShopDetails</div>;
+  return (
+    <div>
+      <h1>Your Shop Details</h1>
+    </div>
+  );
 };
 
 export default ShopDetails;
