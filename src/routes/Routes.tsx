@@ -11,7 +11,7 @@ const Shop = React.lazy(
 
 export const mainRouth = createBrowserRouter([
   {
-    path: "*/",
+    path: "/",
     element: <WebLayout />,
     children: [
       {
